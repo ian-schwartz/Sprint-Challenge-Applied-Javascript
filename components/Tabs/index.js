@@ -12,7 +12,7 @@ const topicsEntry = document.querySelector('.topics');
 function tabs(object) {
     const tabsDiv = document.createElement('div');
 
-    headerDiv.classList.add('tab');
+    tabsDiv.classList.add('tab');
 
     tabsDiv.textContent = object.topics;
 
@@ -22,13 +22,16 @@ function tabs(object) {
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then(response => {
         console.log(response, 'Data from Lambda School');
-        // response.data.topics.forEach(item => {
-        //     topicsEntry.appendChild();
-        // });
+        response.data.topics.forEach((item) => {
+            topicsEntry.appendChild(tabs(response.data));
+        });
     })
     .catch(error => {
         console.log(error, 'The data was not returned');
     });
-
+    
+        // response.data.topics.forEach((item) => {
+        //     topicsEntry.appendChild(tabs(response.data.topics));
+        // });
  
 
