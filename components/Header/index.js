@@ -20,7 +20,7 @@ function header() {
           spanDate.classList.add('date');
           spanTemp.classList.add('temp');
 
-          spanDate.textContent = 'MARCH 28, 2019';
+          spanDate.textContent = 'SMARCH 28, 2019';
           h1Title.textContent = 'Lambda Times';
           spanTemp.textContent = '98°';
 

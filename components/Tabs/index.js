@@ -17,6 +17,8 @@ function tabs(object) {
     tabsDiv.textContent = object.topics;
 
     topicsEntry.appendChild(tabsDiv);
+
+    // return tabsDiv;
 }
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
