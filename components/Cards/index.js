@@ -54,29 +54,7 @@ function cards(object) {
               cardsContainer.appendChild(cards(article));
             });
         }
-        // articles.forEach((item) => {
-        //     cardsContainer.appendChild(cards(articles))
     })
     .catch(error => {
         console.log(error, 'The data was not returned');
     });
-
-    // articles = object.data.articles;
-
-    // object.data.articles.forEach(item => {axios.get(item)
-    // .then(response => {
-    //     console.log(response, 'Data for article cards');
-    //     cardsContainer.appendChild(cards(response.data.articles));
-    // })
-    // .catch(error => {
-    //     console.log(error, 'The data was not returned');
-    //  });
-    // })
-
-
-
-
-
-    // response.data.articles.forEach((item) => {
-    //     cardsContainer.appendChild(cards(response.data));
-    // })
